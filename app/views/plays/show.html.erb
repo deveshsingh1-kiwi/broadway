@@ -1,0 +1,7 @@
+<h1> <b>Play Title:</b> <%= @play.title %></h1>
+<p> <b>Director:</b> <%= @play.director %></p>
+<p><b>Discreption:</b> <%= @play.description %></p>
+
+
+<%= link_to "Back", root_path %>
+<%= link_to "Edit", edit_play_path(@play) %>

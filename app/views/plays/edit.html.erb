@@ -1,0 +1,24 @@
+<h1>Edit Broadway Play</h1>
+
+<%= form_with model: @play do |form| %>
+  <div>
+    <%= form.label :play_title %><br>
+    <%= form.text_field :title %>
+  </div>
+
+  <div>
+    <%= form.label :description %><br>
+    <%= form.text_area :description %>
+  </div>
+
+  <div>
+    <%= form.label :director %><br>
+    <%= form.text_field :director %>
+  </div>
+
+  <br>
+  <div>
+    <%= form.submit %>
+  </div>
+
+<% end %>
